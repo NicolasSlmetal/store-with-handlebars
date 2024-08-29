@@ -1,0 +1,19 @@
+<main class="main__container product">
+    {{#if found}}
+        {{#with product}}
+            <div class="main__left">
+                <img  class="image__left" src="{{image}}">
+            </div>
+            <div class="main__right">
+                <h1>{{name}}</h1>
+                <p class="info__description">
+                    {{description}}
+                </p>
+                <h3>Preço: R$ {{price}}</h3>
+                <a href="#" class="button__send">Comprar</a>
+            </div>
+        {{/with}}
+    {{else}}
+        <h1>Produto não encontrado :(</h1>
+    {{/if}}
+</main>

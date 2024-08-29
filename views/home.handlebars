@@ -1,0 +1,25 @@
+<main class="main__container">
+    {{#if productsIsNotEmpty}}
+        {{#each products}}
+            {{#with this}}
+                <section class="card">
+                        <div class="card__image">
+                            <img class="image" src={{image}}>
+                        </div>
+                        <div class="card__info">
+                            <h3 class="info__name">{{name}}</h3>
+                            <p class="info__price">Preço: R$ {{price}}</p>
+                        </div>
+                    <a class="button__send" href="/products/{{id}}">Visualizar produto</a>
+                </section>
+            {{/with}}
+        {{/each}}
+    {{else}}
+        {{#if isSearch}}
+            <h1>Não há correspondência para {{search}}</h1>
+        {{else}}
+            <h1>:( Não há produtos no momento.</h1>
+        {{/if}}
+    {{/if}}
+
+</main>

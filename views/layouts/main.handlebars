@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pageName}}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="nav__container">
+        <a href="/" class="nav__link">Home</a>
+        <a href="/products/insert" class="nav__link">Cadastrar produto</a>
+        <a href="/about" class="nav__link">Sobre</a>
+        <form class="search__form" action="/search" method="GET">
+            <input class="input" type="text" id="search" name="name" placeholder="Nome do produto">
+            <input class="button__search" type="submit" value="Pesquisar">
+        </form>
+    </nav>
+    {{{body}}}
+    <footer>
+        <div class="footer"><p>Todos os direitos reservados 2024</p></div>
+    </footer>
+</body>
+</html>
