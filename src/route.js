@@ -11,7 +11,6 @@ router.get("/about", (req, res) => {
 
 router.get("/search", (req, res) => {
     const name = req.query.name;
-    console.log(name)
     const filteredProducts = []
     const upperNameParameter = name.toUpperCase();
     for (let product of products){
